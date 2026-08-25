@@ -1,0 +1,1385 @@
+{
+  "target_path": "benchmarks/avionics_expert_system.pl",
+  "scanned_files_count": 1,
+  "execution_time_seconds": 0.0033,
+  "total_detections": 57,
+  "category_counts": {
+    "logic_constraints": 15,
+    "higher_order_meta": 4,
+    "gof_creational": 7,
+    "gof_structural": 5,
+    "gof_behavioral": 13,
+    "logic_hazards": 11,
+    "solid_principles": 2
+  },
+  "detections": [
+    {
+      "pattern_type": "definite_clause_grammar",
+      "category": "logic_constraints",
+      "target_name": "waypoint_list",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 26,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Definite Clause Grammar (Rule --> ...) for declarative syntactic parsing and difference lists.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DCG_RULE",
+          "weight": 0.95,
+          "description": "Definite Clause Grammar (DCG) rule 'waypoint_list': 'waypoint_list([W|Ws]) --> waypoint(W), waypoint_list(Ws).'",
+          "location": "benchmarks/avionics_expert_system.pl:26:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "definite_clause_grammar",
+      "category": "logic_constraints",
+      "target_name": "waypoint_list",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 27,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Definite Clause Grammar (Rule --> ...) for declarative syntactic parsing and difference lists.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DCG_RULE",
+          "weight": 0.95,
+          "description": "Definite Clause Grammar (DCG) rule 'waypoint_list': 'waypoint_list([])     --> [].'",
+          "location": "benchmarks/avionics_expert_system.pl:27:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "definite_clause_grammar",
+      "category": "logic_constraints",
+      "target_name": "waypoint",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 29,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Definite Clause Grammar (Rule --> ...) for declarative syntactic parsing and difference lists.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DCG_RULE",
+          "weight": 0.95,
+          "description": "Definite Clause Grammar (DCG) rule 'waypoint': 'waypoint(waypoint(ID, Alt)) --> [wpt, ID, alt, Alt].'",
+          "location": "benchmarks/avionics_expert_system.pl:29:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "clpfd_constraint_reasoning",
+      "category": "logic_constraints",
+      "target_name": "CLP(FD)",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 8,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Constraint Logic Programming over Finite Domains (#=, #>, in, labeling/2) for combinatorial search.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_CLPFD_CONSTRAINT",
+          "weight": 0.95,
+          "description": "CLP(FD) Finite Domain constraint reasoning: ':- use_module(library(clpfd)).'",
+          "location": "benchmarks/avionics_expert_system.pl:8:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "clpfd_constraint_reasoning",
+      "category": "logic_constraints",
+      "target_name": "CLP(FD)",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 37,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Constraint Logic Programming over Finite Domains (#=, #>, in, labeling/2) for combinatorial search.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_CLPFD_CONSTRAINT",
+          "weight": 0.95,
+          "description": "CLP(FD) Finite Domain constraint reasoning: 'BurnRate in 50..200,'",
+          "location": "benchmarks/avionics_expert_system.pl:37:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "clpfd_constraint_reasoning",
+      "category": "logic_constraints",
+      "target_name": "CLP(FD)",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 38,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Constraint Logic Programming over Finite Domains (#=, #>, in, labeling/2) for combinatorial search.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_CLPFD_CONSTRAINT",
+          "weight": 0.95,
+          "description": "CLP(FD) Finite Domain constraint reasoning: 'TotalFuel #= TankA + TankB,'",
+          "location": "benchmarks/avionics_expert_system.pl:38:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "clpfd_constraint_reasoning",
+      "category": "logic_constraints",
+      "target_name": "CLP(FD)",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 39,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Constraint Logic Programming over Finite Domains (#=, #>, in, labeling/2) for combinatorial search.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_CLPFD_CONSTRAINT",
+          "weight": 0.95,
+          "description": "CLP(FD) Finite Domain constraint reasoning: 'TotalTime #= TotalFuel // BurnRate,'",
+          "location": "benchmarks/avionics_expert_system.pl:39:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "clpfd_constraint_reasoning",
+      "category": "logic_constraints",
+      "target_name": "CLP(FD)",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 40,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Constraint Logic Programming over Finite Domains (#=, #>, in, labeling/2) for combinatorial search.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_CLPFD_CONSTRAINT",
+          "weight": 0.95,
+          "description": "CLP(FD) Finite Domain constraint reasoning: 'labeling([ff, bisect], [TankA, TankB, BurnRate]).'",
+          "location": "benchmarks/avionics_expert_system.pl:40:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "clpr_real_constraint_solving",
+      "category": "logic_constraints",
+      "target_name": "CLP(R/Q)",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 9,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Constraint Logic Programming over Real/Rational numbers ({Equations}) for algebraic reasoning.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_CLPR_CONSTRAINT",
+          "weight": 0.92,
+          "description": "CLP(R/Q) Real/Rational constraint solving: ':- use_module(library(clpr)).'",
+          "location": "benchmarks/avionics_expert_system.pl:9:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "clpr_real_constraint_solving",
+      "category": "logic_constraints",
+      "target_name": "CLP(R/Q)",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 43,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Constraint Logic Programming over Real/Rational numbers ({Equations}) for algebraic reasoning.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_CLPR_CONSTRAINT",
+          "weight": 0.92,
+          "description": "CLP(R/Q) Real/Rational constraint solving: '{ Altitude = GroundDist * tan(SlopeAngle) }.'",
+          "location": "benchmarks/avionics_expert_system.pl:43:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "constraint_handling_rules",
+      "category": "logic_constraints",
+      "target_name": "CHR",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 10,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Committed-choice rule-based language extension (rule @ Head <=> Guard | Body) for user-defined constraint solvers.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_CHR_RULE",
+          "weight": 0.95,
+          "description": "Constraint Handling Rules (CHR) syntax: ':- use_module(library(chr)).'",
+          "location": "benchmarks/avionics_expert_system.pl:10:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "constraint_handling_rules",
+      "category": "logic_constraints",
+      "target_name": "CHR",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 49,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Committed-choice rule-based language extension (rule @ Head <=> Guard | Body) for user-defined constraint solvers.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_CHR_RULE",
+          "weight": 0.95,
+          "description": "Constraint Handling Rules (CHR) syntax: 'chr_constraint aircraft_pos/3, alert_tcav/2.'",
+          "location": "benchmarks/avionics_expert_system.pl:49:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "constraint_handling_rules",
+      "category": "logic_constraints",
+      "target_name": "CHR",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 51,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Committed-choice rule-based language extension (rule @ Head <=> Guard | Body) for user-defined constraint solvers.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_CHR_RULE",
+          "weight": 0.95,
+          "description": "Constraint Handling Rules (CHR) syntax: 'duplicate_pos @ aircraft_pos(ID, X, Y) \\ aircraft_pos(ID, X, Y) <=> true.'",
+          "location": "benchmarks/avionics_expert_system.pl:51:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "constraint_handling_rules",
+      "category": "logic_constraints",
+      "target_name": "CHR",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 52,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Committed-choice rule-based language extension (rule @ Head <=> Guard | Body) for user-defined constraint solvers.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_CHR_RULE",
+          "weight": 0.95,
+          "description": "Constraint Handling Rules (CHR) syntax: 'proximity_check @ aircraft_pos(A, X1, Y1), aircraft_pos(B, X2, Y2) ==>'",
+          "location": "benchmarks/avionics_expert_system.pl:52:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "tabling_memoization_slg",
+      "category": "logic_constraints",
+      "target_name": "shortest_path/3",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 11,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "SLG Resolution tabling (:- table Pred/Arity.) preventing infinite loops in cyclic graphs.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_TABLING_SLG",
+          "weight": 0.95,
+          "description": "SLG Resolution tabling memoization directive for 'shortest_path/3'",
+          "location": "benchmarks/avionics_expert_system.pl:11:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "include",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 72,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'include'",
+          "location": "benchmarks/avionics_expert_system.pl:72:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "maplist",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 73,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'maplist'",
+          "location": "benchmarks/avionics_expert_system.pl:73:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "maplist",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 106,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'maplist'",
+          "location": "benchmarks/avionics_expert_system.pl:106:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "all_solutions_aggregation",
+      "category": "higher_order_meta",
+      "target_name": "findall",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 74,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.9,
+        "percentage": 90,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Second-order aggregation predicates (findall/3, setof/3, bagof/3) collecting solution sets.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_ALL_SOLUTIONS",
+          "weight": 0.9,
+          "description": "All-solutions aggregation second-order predicate 'findall'",
+          "location": "benchmarks/avionics_expert_system.pl:74:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_factory_method",
+      "category": "gof_creational",
+      "target_name": "create_flight_director",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 81,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Creational pattern constructing specialized compound functor terms based on type descriptor.",
+      "evidence": [
+        {
+          "rule_name": "CREATIONAL_FACTORY_METHOD",
+          "weight": 0.92,
+          "description": "Predicate 'create_flight_director' implements GoF Factory Method generating terms based on parameters",
+          "location": "benchmarks/avionics_expert_system.pl:81:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_factory_method",
+      "category": "gof_creational",
+      "target_name": "with_waypoint_builder",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 83,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Creational pattern constructing specialized compound functor terms based on type descriptor.",
+      "evidence": [
+        {
+          "rule_name": "CREATIONAL_FACTORY_METHOD",
+          "weight": 0.92,
+          "description": "Predicate 'with_waypoint_builder' implements GoF Factory Method generating terms based on parameters",
+          "location": "benchmarks/avionics_expert_system.pl:83:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_abstract_factory",
+      "category": "gof_creational",
+      "target_name": "abstract_factory_avionics",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 82,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Creational pattern generating families of related logical records without specifying concrete functors.",
+      "evidence": [
+        {
+          "rule_name": "CREATIONAL_ABSTRACT_FACTORY",
+          "weight": 0.92,
+          "description": "Predicate 'abstract_factory_avionics' implements GoF Abstract Factory producing related term families",
+          "location": "benchmarks/avionics_expert_system.pl:82:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_builder",
+      "category": "gof_creational",
+      "target_name": "with_waypoint_builder",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 83,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.9,
+        "percentage": 90,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Creational pattern assembling complex terms stepwise via accumulator threading or DCG grammars.",
+      "evidence": [
+        {
+          "rule_name": "CREATIONAL_BUILDER",
+          "weight": 0.9,
+          "description": "Predicate 'with_waypoint_builder' implements GoF Builder using stepwise accumulator state threading",
+          "location": "benchmarks/avionics_expert_system.pl:83:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_builder",
+      "category": "gof_creational",
+      "target_name": "with_strategy",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 104,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.9,
+        "percentage": 90,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Creational pattern assembling complex terms stepwise via accumulator threading or DCG grammars.",
+      "evidence": [
+        {
+          "rule_name": "CREATIONAL_BUILDER",
+          "weight": 0.9,
+          "description": "Predicate 'with_strategy' implements GoF Builder using stepwise accumulator state threading",
+          "location": "benchmarks/avionics_expert_system.pl:104:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_prototype",
+      "category": "gof_creational",
+      "target_name": "copy_term",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 84,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.9,
+        "percentage": 90,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Creational pattern cloning terms with fresh variable allocations via copy_term/2 or duplicate_term/2.",
+      "evidence": [
+        {
+          "rule_name": "CREATIONAL_PROTOTYPE",
+          "weight": 0.9,
+          "description": "GoF Prototype cloning term with variable unsharing via 'copy_term'",
+          "location": "benchmarks/avionics_expert_system.pl:84:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_singleton",
+      "category": "gof_creational",
+      "target_name": "nb_setval",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 85,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Creational pattern maintaining a unique dynamic database fact or global variable (nb_setval).",
+      "evidence": [
+        {
+          "rule_name": "CREATIONAL_SINGLETON",
+          "weight": 0.92,
+          "description": "GoF Singleton state access via global non-backtrackable variable 'nb_setval'",
+          "location": "benchmarks/avionics_expert_system.pl:85:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_bridge",
+      "category": "gof_structural",
+      "target_name": "driver_execute_bridge",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 89,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.9,
+        "percentage": 90,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Structural pattern decoupling high-level logical relations from backend database/solver drivers.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_BRIDGE",
+          "weight": 0.9,
+          "description": "Predicate 'driver_execute_bridge' implements GoF Bridge decoupling logical operations from concrete backends",
+          "location": "benchmarks/avionics_expert_system.pl:89:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_composite",
+      "category": "gof_structural",
+      "target_name": "eval_composite_tree",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 90,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Structural pattern composing terms into recursive tree structures (node/2, tree/3) handled uniformly.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_COMPOSITE",
+          "weight": 0.92,
+          "description": "Predicate 'eval_composite_tree' implements GoF Composite traversing recursive tree/composite structures",
+          "location": "benchmarks/avionics_expert_system.pl:90:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_decorator",
+      "category": "gof_structural",
+      "target_name": "decorate_with_timing",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 91,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Structural pattern dynamically wrapping goal evaluation with pre/post hooks, logging, or caching.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_DECORATOR",
+          "weight": 0.92,
+          "description": "Predicate 'decorate_with_timing' implements GoF Decorator augmenting goal execution dynamically",
+          "location": "benchmarks/avionics_expert_system.pl:91:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_flyweight",
+      "category": "gof_structural",
+      "target_name": "trie_lookup",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 92,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.9,
+        "percentage": 90,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Structural pattern sharing immutable atomic terms and symbol tables using trie indexing.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_FLYWEIGHT",
+          "weight": 0.9,
+          "description": "GoF Flyweight sharing immutable terms or trie tables via 'trie_lookup'",
+          "location": "benchmarks/avionics_expert_system.pl:92:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_proxy",
+      "category": "gof_structural",
+      "target_name": "goal_expansion",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 93,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.9,
+        "percentage": 90,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Structural pattern intercepting and rewriting goals via goal_expansion/2 or term_expansion/2.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_PROXY",
+          "weight": 0.9,
+          "description": "GoF Proxy intercepting and rewriting goals via macro hook 'goal_expansion'",
+          "location": "benchmarks/avionics_expert_system.pl:93:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_chain_of_responsibility",
+      "category": "gof_behavioral",
+      "target_name": "handle_failure",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 96,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern passing requests through disjunctive clause branches until one succeeds.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_CHAIN_OF_RESPONSIBILITY",
+          "weight": 0.95,
+          "description": "Predicate 'handle_failure' implements GoF Chain of Responsibility with disjunctive fallback branching",
+          "location": "benchmarks/avionics_expert_system.pl:96:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_command",
+      "category": "gof_behavioral",
+      "target_name": "driver_execute_bridge",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 89,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern encapsulating an executable goal as a reified term executed via call/N or catch/3.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_COMMAND",
+          "weight": 0.95,
+          "description": "Predicate 'driver_execute_bridge' implements GoF Command encapsulating executable operations as first-class terms",
+          "location": "benchmarks/avionics_expert_system.pl:89:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_command",
+      "category": "gof_behavioral",
+      "target_name": "execute_autopilot_cmd",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 97,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern encapsulating an executable goal as a reified term executed via call/N or catch/3.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_COMMAND",
+          "weight": 0.95,
+          "description": "Predicate 'execute_autopilot_cmd' implements GoF Command encapsulating executable operations as first-class terms",
+          "location": "benchmarks/avionics_expert_system.pl:97:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_interpreter",
+      "category": "gof_behavioral",
+      "target_name": "eval_ast_expr",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 98,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.9,
+        "percentage": 90,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern evaluating domain-specific grammar or AST expression trees.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_INTERPRETER",
+          "weight": 0.9,
+          "description": "Predicate 'eval_ast_expr' implements GoF Interpreter evaluating syntax tree expressions",
+          "location": "benchmarks/avionics_expert_system.pl:98:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_iterator",
+      "category": "gof_behavioral",
+      "target_name": "iterator_stream",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 99,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern generating elements sequentially on backtracking (member/2, between/3).",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_ITERATOR",
+          "weight": 0.92,
+          "description": "Predicate 'iterator_stream' implements GoF Iterator yielding elements on backtracking",
+          "location": "benchmarks/avionics_expert_system.pl:99:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_mediator",
+      "category": "gof_behavioral",
+      "target_name": "mediator_blackboard_msg",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 100,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.9,
+        "percentage": 90,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern coordinating colleague predicates through a centralized dynamic blackboard.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_MEDIATOR",
+          "weight": 0.9,
+          "description": "Predicate 'mediator_blackboard_msg' implements GoF Mediator coordinating subsystem communication",
+          "location": "benchmarks/avionics_expert_system.pl:100:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_memento",
+      "category": "gof_behavioral",
+      "target_name": "snapshot_memento_state",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 101,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.9,
+        "percentage": 90,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern recording database snapshots and transactional state checkpoints for rollback.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_MEMENTO",
+          "weight": 0.9,
+          "description": "Predicate 'snapshot_memento_state' implements GoF Memento recording state checkpoints for restoration",
+          "location": "benchmarks/avionics_expert_system.pl:101:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_observer",
+      "category": "gof_behavioral",
+      "target_name": "subscribe_alarm_observer",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 102,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern broadcasting events to registered listener predicates or dynamic hook tables.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_OBSERVER",
+          "weight": 0.95,
+          "description": "Predicate 'subscribe_alarm_observer' implements GoF Observer broadcasting event notifications to listeners",
+          "location": "benchmarks/avionics_expert_system.pl:102:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_state",
+      "category": "gof_behavioral",
+      "target_name": "with_waypoint_builder",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 83,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern threading explicit state variables (State0 -> State1 -> StateN) through relations.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_STATE",
+          "weight": 0.95,
+          "description": "Predicate 'with_waypoint_builder' implements GoF State pattern threading explicit state transitions",
+          "location": "benchmarks/avionics_expert_system.pl:83:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_state",
+      "category": "gof_behavioral",
+      "target_name": "state_step",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 103,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern threading explicit state variables (State0 -> State1 -> StateN) through relations.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_STATE",
+          "weight": 0.95,
+          "description": "Predicate 'state_step' implements GoF State pattern threading explicit state transitions",
+          "location": "benchmarks/avionics_expert_system.pl:103:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_strategy",
+      "category": "gof_behavioral",
+      "target_name": "with_strategy",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 104,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern injecting interchangeable algorithmic goal closures into call/N or maplist/N.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_STRATEGY",
+          "weight": 0.92,
+          "description": "Predicate 'with_strategy' implements GoF Strategy injecting interchangeable algorithmic goals",
+          "location": "benchmarks/avionics_expert_system.pl:104:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_template_method",
+      "category": "gof_behavioral",
+      "target_name": "process_pipeline_flow",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 105,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.9,
+        "percentage": 90,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern defining skeleton relation calling customizable multifile hook predicates.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_TEMPLATE_METHOD",
+          "weight": 0.9,
+          "description": "Predicate 'process_pipeline_flow' implements GoF Template Method defining invariant algorithm steps with hook calls",
+          "location": "benchmarks/avionics_expert_system.pl:105:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_visitor",
+      "category": "gof_behavioral",
+      "target_name": "TermVisitor",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 106,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern traversing compound terms using univ (=..) and term_variables/2.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_VISITOR",
+          "weight": 0.92,
+          "description": "GoF Visitor compound term traversal via univ (=..) or term reflection: 'traverse_term_visitor(Term) :- Term =.. [_|SubTerms], maplist(traverse_term_visitor, SubTerms).'",
+          "location": "benchmarks/avionics_expert_system.pl:106:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_cut_red_cut_hazard",
+      "category": "logic_hazards",
+      "target_name": "!",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 63,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Procedural cut (!) altering logical semantics and breaking commutativity/declarative purity.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_RED_CUT_HAZARD",
+          "weight": 0.95,
+          "description": "Procedural cut (!) alters declarative semantics and breaks commutativity: 'evaluate_avionics_goal(true) :- !.'",
+          "location": "benchmarks/avionics_expert_system.pl:63:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_cut_red_cut_hazard",
+      "category": "logic_hazards",
+      "target_name": "!",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 64,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Procedural cut (!) altering logical semantics and breaking commutativity/declarative purity.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_RED_CUT_HAZARD",
+          "weight": 0.95,
+          "description": "Procedural cut (!) alters declarative semantics and breaks commutativity: 'evaluate_avionics_goal((A, B)) :- !, evaluate_avionics_goal(A), evaluate_avionics_goal(B).'",
+          "location": "benchmarks/avionics_expert_system.pl:64:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_cut_red_cut_hazard",
+      "category": "logic_hazards",
+      "target_name": "!",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 81,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Procedural cut (!) altering logical semantics and breaking commutativity/declarative purity.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_RED_CUT_HAZARD",
+          "weight": 0.95,
+          "description": "Procedural cut (!) alters declarative semantics and breaks commutativity: 'create_flight_director(Mode, director(Mode, active)) :- !.'",
+          "location": "benchmarks/avionics_expert_system.pl:81:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_cut_red_cut_hazard",
+      "category": "logic_hazards",
+      "target_name": "!",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 113,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Procedural cut (!) altering logical semantics and breaking commutativity/declarative purity.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_RED_CUT_HAZARD",
+          "weight": 0.95,
+          "description": "Procedural cut (!) alters declarative semantics and breaks commutativity: 'unsafe_red_cut(X, Y) :- X > 0, !, Y = positive.'",
+          "location": "benchmarks/avionics_expert_system.pl:113:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_term_evaluation_hazard",
+      "category": "logic_hazards",
+      "target_name": "DynamicGoalExecution",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 117,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Evaluating untrusted goal input via call/N or atom_to_term/3 risking arbitrary code execution.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_ARBITRARY_GOAL_EXECUTION",
+          "weight": 0.95,
+          "description": "Dynamic goal evaluation risks arbitrary code execution: 'unsafe_dynamic_exec(Input) :- atom_to_term(Input, Goal, _), call(Goal).'",
+          "location": "benchmarks/avionics_expert_system.pl:117:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_dynamic_assert_hazard",
+      "category": "logic_hazards",
+      "target_name": "assertz",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 120,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Unmanaged assertz/retract creating memory leaks and dynamic database pollution.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DYNAMIC_ASSERT_HAZARD",
+          "weight": 0.92,
+          "description": "Unsafe dynamic assertion 'assertz' risks global state leakage and database pollution",
+          "location": "benchmarks/avionics_expert_system.pl:120:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_io_system_hazard",
+      "category": "logic_hazards",
+      "target_name": "shell",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 123,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Executing shell commands (shell/1, process_create/3) with unsanitized atom arguments.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_OS_COMMAND_INJECTION",
+          "weight": 0.95,
+          "description": "OS command execution via 'shell' risks command injection",
+          "location": "benchmarks/avionics_expert_system.pl:123:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "infinite_left_recursion_hazard",
+      "category": "logic_hazards",
+      "target_name": "shortest_path",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 61,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Direct left recursion in clause body causing infinite loops during SLD resolution.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_LEFT_RECURSION_HAZARD",
+          "weight": 0.92,
+          "description": "Direct left-recursive clause 'shortest_path' risks stack overflow under standard SLD resolution",
+          "location": "benchmarks/avionics_expert_system.pl:61:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "infinite_left_recursion_hazard",
+      "category": "logic_hazards",
+      "target_name": "eval_composite_tree",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 90,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Direct left recursion in clause body causing infinite loops during SLD resolution.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_LEFT_RECURSION_HAZARD",
+          "weight": 0.92,
+          "description": "Direct left-recursive clause 'eval_composite_tree' risks stack overflow under standard SLD resolution",
+          "location": "benchmarks/avionics_expert_system.pl:90:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "infinite_left_recursion_hazard",
+      "category": "logic_hazards",
+      "target_name": "eval_ast_expr",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 98,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Direct left recursion in clause body causing infinite loops during SLD resolution.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_LEFT_RECURSION_HAZARD",
+          "weight": 0.92,
+          "description": "Direct left-recursive clause 'eval_ast_expr' risks stack overflow under standard SLD resolution",
+          "location": "benchmarks/avionics_expert_system.pl:98:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "uninstantiated_var_negation_hazard",
+      "category": "logic_hazards",
+      "target_name": "UnsoundNegation",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 126,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.9,
+        "percentage": 90,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Calling negation (\\+ or not) on uninstantiated variables producing unsound logical answers.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_UNSOUND_NEGATION",
+          "weight": 0.9,
+          "description": "Negation-as-failure on uninstantiated variable produces unsound logical results: 'flawed_negation_check(X) :- \\+ var(X).'",
+          "location": "benchmarks/avionics_expert_system.pl:126:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "monolithic_module_srp",
+      "category": "solid_principles",
+      "target_name": "avionics_expert_system",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 1,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.85,
+        "percentage": 85,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Module exports excessive predicates (>25); decompose into focused submodules.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_MONOLITHIC_MODULE",
+          "weight": 0.85,
+          "description": "Module 'avionics_expert_system' exports 4 predicates and has 43 declarations, violating SRP",
+          "location": "benchmarks/avionics_expert_system.pl:1:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "fat_predicate_arity_srp",
+      "category": "solid_principles",
+      "target_name": "fat_telemetry_predicate/10",
+      "location": {
+        "file_path": "benchmarks/avionics_expert_system.pl",
+        "line_number": 129,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.85,
+        "percentage": 85,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Predicate declares excessive arity (>=8); refactor using compound terms or options lists.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_FAT_ARITY",
+          "weight": 0.85,
+          "description": "Predicate 'fat_telemetry_predicate/10' declares excessive arity (10 arguments >= 8)",
+          "location": "benchmarks/avionics_expert_system.pl:129:1"
+        }
+      ]
+    }
+  ]
+}

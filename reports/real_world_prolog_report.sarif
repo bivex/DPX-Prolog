@@ -1,0 +1,2514 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "DPX-Prolog",
+          "informationUri": "https://github.com/bivex/DPX-Prolog",
+          "semanticVersion": "0.1.0",
+          "rules": [
+            {
+              "id": "definite_clause_grammar",
+              "name": "DEFINITE_CLAUSE_GRAMMAR",
+              "shortDescription": {
+                "text": "Definite Clause Grammar (Rule --> ...) for declarative syntactic parsing and difference lists."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "clpr_real_constraint_solving",
+              "name": "CLPR_REAL_CONSTRAINT_SOLVING",
+              "shortDescription": {
+                "text": "Constraint Logic Programming over Real/Rational numbers ({Equations}) for algebraic reasoning."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "higher_order_maplist",
+              "name": "HIGHER_ORDER_MAPLIST",
+              "shortDescription": {
+                "text": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "all_solutions_aggregation",
+              "name": "ALL_SOLUTIONS_AGGREGATION",
+              "shortDescription": {
+                "text": "Second-order aggregation predicates (findall/3, setof/3, bagof/3) collecting solution sets."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "gof_proxy",
+              "name": "GOF_PROXY",
+              "shortDescription": {
+                "text": "Structural pattern intercepting and rewriting goals via goal_expansion/2 or term_expansion/2."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "gof_state",
+              "name": "GOF_STATE",
+              "shortDescription": {
+                "text": "Behavioral pattern threading explicit state variables (State0 -> State1 -> StateN) through relations."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "gof_visitor",
+              "name": "GOF_VISITOR",
+              "shortDescription": {
+                "text": "Behavioral pattern traversing compound terms using univ (=..) and term_variables/2."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "unsafe_cut_red_cut_hazard",
+              "name": "UNSAFE_CUT_RED_CUT_HAZARD",
+              "shortDescription": {
+                "text": "Procedural cut (!) altering logical semantics and breaking commutativity/declarative purity."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              }
+            },
+            {
+              "id": "unsafe_dynamic_assert_hazard",
+              "name": "UNSAFE_DYNAMIC_ASSERT_HAZARD",
+              "shortDescription": {
+                "text": "Unmanaged assertz/retract creating memory leaks and dynamic database pollution."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              }
+            },
+            {
+              "id": "monolithic_module_srp",
+              "name": "MONOLITHIC_MODULE_SRP",
+              "shortDescription": {
+                "text": "Module exports excessive predicates (>25); decompose into focused submodules."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "fat_predicate_arity_srp",
+              "name": "FAT_PREDICATE_ARITY_SRP",
+              "shortDescription": {
+                "text": "Predicate declares excessive arity (>=8); refactor using compound terms or options lists."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "impure_state_mutation_srp",
+              "name": "IMPURE_STATE_MUTATION_SRP",
+              "shortDescription": {
+                "text": "Mixing pure logical deduction with assertz/retract side-effects inside relations."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "definite_clause_grammar",
+          "message": {
+            "text": "[logic_constraints] Definite Clause Grammar (Rule --> ...) for declarative syntactic parsing and difference lists. on 'sign'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/dcg_basics.pl"
+                },
+                "region": {
+                  "startLine": 348,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "definite_clause_grammar",
+          "message": {
+            "text": "[logic_constraints] Definite Clause Grammar (Rule --> ...) for declarative syntactic parsing and difference lists. on 'sign'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/dcg_basics.pl"
+                },
+                "region": {
+                  "startLine": 349,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "definite_clause_grammar",
+          "message": {
+            "text": "[logic_constraints] Definite Clause Grammar (Rule --> ...) for declarative syntactic parsing and difference lists. on 'dot'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/dcg_basics.pl"
+                },
+                "region": {
+                  "startLine": 351,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "definite_clause_grammar",
+          "message": {
+            "text": "[logic_constraints] Definite Clause Grammar (Rule --> ...) for declarative syntactic parsing and difference lists. on 'exp'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/dcg_basics.pl"
+                },
+                "region": {
+                  "startLine": 353,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "definite_clause_grammar",
+          "message": {
+            "text": "[logic_constraints] Definite Clause Grammar (Rule --> ...) for declarative syntactic parsing and difference lists. on 'exp'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/dcg_basics.pl"
+                },
+                "region": {
+                  "startLine": 354,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "definite_clause_grammar",
+          "message": {
+            "text": "[logic_constraints] Definite Clause Grammar (Rule --> ...) for declarative syntactic parsing and difference lists. on 'eol'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/dcg_basics.pl"
+                },
+                "region": {
+                  "startLine": 430,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "definite_clause_grammar",
+          "message": {
+            "text": "[logic_constraints] Definite Clause Grammar (Rule --> ...) for declarative syntactic parsing and difference lists. on 'eol'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/dcg_basics.pl"
+                },
+                "region": {
+                  "startLine": 431,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "definite_clause_grammar",
+          "message": {
+            "text": "[logic_constraints] Definite Clause Grammar (Rule --> ...) for declarative syntactic parsing and difference lists. on 'eol'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/dcg_basics.pl"
+                },
+                "region": {
+                  "startLine": 432,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "definite_clause_grammar",
+          "message": {
+            "text": "[logic_constraints] Definite Clause Grammar (Rule --> ...) for declarative syntactic parsing and difference lists. on 'prolog_id_cont'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/dcg_basics.pl"
+                },
+                "region": {
+                  "startLine": 475,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "clpr_real_constraint_solving",
+          "message": {
+            "text": "[logic_constraints] Constraint Logic Programming over Real/Rational numbers ({Equations}) for algebraic reasoning. on 'CLP(R/Q)'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/dcg_basics.pl"
+                },
+                "region": {
+                  "startLine": 334,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "clpr_real_constraint_solving",
+          "message": {
+            "text": "[logic_constraints] Constraint Logic Programming over Real/Rational numbers ({Equations}) for algebraic reasoning. on 'CLP(R/Q)'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/dcg_basics.pl"
+                },
+                "region": {
+                  "startLine": 335,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "clpr_real_constraint_solving",
+          "message": {
+            "text": "[logic_constraints] Constraint Logic Programming over Real/Rational numbers ({Equations}) for algebraic reasoning. on 'CLP(R/Q)'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/dcg_basics.pl"
+                },
+                "region": {
+                  "startLine": 339,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "clpr_real_constraint_solving",
+          "message": {
+            "text": "[logic_constraints] Constraint Logic Programming over Real/Rational numbers ({Equations}) for algebraic reasoning. on 'CLP(R/Q)'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/dcg_basics.pl"
+                },
+                "region": {
+                  "startLine": 340,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'maplist'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'maplist'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'include'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'exclude'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'partition'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'partition'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'maplist'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'maplist'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'maplist'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'maplist'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'convlist'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'foldl'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 91,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'foldl'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'foldl'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 93,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'foldl'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'include'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 110,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'include'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 111,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'include'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 116,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'exclude'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 126,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'exclude'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 127,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'exclude'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 132,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'partition'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 143,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'partition'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 144,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'partition'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 147,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'partition'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 149,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'partition'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 162,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'partition'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 163,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'partition'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 170,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'partition'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'partition'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 178,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'maplist'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 209,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'maplist'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 210,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'maplist'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 212,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'maplist'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 214,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'maplist'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 215,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'maplist'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 217,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'maplist'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 219,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'maplist'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 220,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'maplist'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 222,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'maplist'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 224,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'maplist'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 225,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'maplist'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 227,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'convlist'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 244,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'convlist'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 245,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'convlist'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 248,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'convlist'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 249,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'foldl'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 285,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'foldl'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 286,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'foldl'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 288,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'foldl'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 291,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'foldl'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 292,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'foldl'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 294,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'foldl'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 297,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'foldl'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 298,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'foldl'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 300,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'foldl'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 303,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'foldl'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 304,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'foldl'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 306,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'maplist'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 373,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "all_solutions_aggregation",
+          "message": {
+            "text": "[higher_order_meta] Second-order aggregation predicates (findall/3, setof/3, bagof/3) collecting solution sets. on 'aggregate_all'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 428,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_proxy",
+          "message": {
+            "text": "[gof_structural] Structural pattern intercepting and rewriting goals via goal_expansion/2 or term_expansion/2. on 'term_expansion'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 371,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_proxy",
+          "message": {
+            "text": "[gof_structural] Structural pattern intercepting and rewriting goals via goal_expansion/2 or term_expansion/2. on 'term_expansion'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 272,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_state",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern threading explicit state variables (State0 -> State1 -> StateN) through relations. on 'foldl'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 286,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_state",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern threading explicit state variables (State0 -> State1 -> StateN) through relations. on 'foldl'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 292,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_state",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern threading explicit state variables (State0 -> State1 -> StateN) through relations. on 'foldl'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 298,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_state",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern threading explicit state variables (State0 -> State1 -> StateN) through relations. on 'foldl'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 304,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_state",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern threading explicit state variables (State0 -> State1 -> StateN) through relations. on 'get_option'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_option.pl"
+                },
+                "region": {
+                  "startLine": 175,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_state",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern threading explicit state variables (State0 -> State1 -> StateN) through relations. on 'get_option'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_option.pl"
+                },
+                "region": {
+                  "startLine": 178,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_state",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern threading explicit state variables (State0 -> State1 -> StateN) through relations. on 'mkval'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/dcg_basics.pl"
+                },
+                "region": {
+                  "startLine": 417,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_visitor",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern traversing compound terms using univ (=..) and term_variables/2. on 'TermVisitor'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_option.pl"
+                },
+                "region": {
+                  "startLine": 295,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_visitor",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern traversing compound terms using univ (=..) and term_variables/2. on 'TermVisitor'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_option.pl"
+                },
+                "region": {
+                  "startLine": 298,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_visitor",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern traversing compound terms using univ (=..) and term_variables/2. on 'TermVisitor'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_option.pl"
+                },
+                "region": {
+                  "startLine": 344,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_visitor",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern traversing compound terms using univ (=..) and term_variables/2. on 'TermVisitor'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_option.pl"
+                },
+                "region": {
+                  "startLine": 348,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_visitor",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern traversing compound terms using univ (=..) and term_variables/2. on 'TermVisitor'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 221,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_visitor",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern traversing compound terms using univ (=..) and term_variables/2. on 'TermVisitor'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 222,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_visitor",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern traversing compound terms using univ (=..) and term_variables/2. on 'TermVisitor'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 225,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_visitor",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern traversing compound terms using univ (=..) and term_variables/2. on 'TermVisitor'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 247,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_visitor",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern traversing compound terms using univ (=..) and term_variables/2. on 'TermVisitor'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 248,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_visitor",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern traversing compound terms using univ (=..) and term_variables/2. on 'TermVisitor'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 258,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_visitor",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern traversing compound terms using univ (=..) and term_variables/2. on 'TermVisitor'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 259,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_cut_red_cut_hazard",
+          "message": {
+            "text": "[logic_hazards] Procedural cut (!) altering logical semantics and breaking commutativity/declarative purity. on '!'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_option.pl"
+                },
+                "region": {
+                  "startLine": 245,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_cut_red_cut_hazard",
+          "message": {
+            "text": "[logic_hazards] Procedural cut (!) altering logical semantics and breaking commutativity/declarative purity. on '!'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_option.pl"
+                },
+                "region": {
+                  "startLine": 246,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_cut_red_cut_hazard",
+          "message": {
+            "text": "[logic_hazards] Procedural cut (!) altering logical semantics and breaking commutativity/declarative purity. on '!'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 265,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_cut_red_cut_hazard",
+          "message": {
+            "text": "[logic_hazards] Procedural cut (!) altering logical semantics and breaking commutativity/declarative purity. on '!'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 381,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_cut_red_cut_hazard",
+          "message": {
+            "text": "[logic_hazards] Procedural cut (!) altering logical semantics and breaking commutativity/declarative purity. on '!'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 576,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_cut_red_cut_hazard",
+          "message": {
+            "text": "[logic_hazards] Procedural cut (!) altering logical semantics and breaking commutativity/declarative purity. on '!'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 691,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_dynamic_assert_hazard",
+          "message": {
+            "text": "[logic_hazards] Unmanaged assertz/retract creating memory leaks and dynamic database pollution. on 'assert'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 323,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_dynamic_assert_hazard",
+          "message": {
+            "text": "[logic_hazards] Unmanaged assertz/retract creating memory leaks and dynamic database pollution. on 'assert'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 340,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_dynamic_assert_hazard",
+          "message": {
+            "text": "[logic_hazards] Unmanaged assertz/retract creating memory leaks and dynamic database pollution. on 'assert'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 352,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_dynamic_assert_hazard",
+          "message": {
+            "text": "[logic_hazards] Unmanaged assertz/retract creating memory leaks and dynamic database pollution. on 'assert'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 369,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_dynamic_assert_hazard",
+          "message": {
+            "text": "[logic_hazards] Unmanaged assertz/retract creating memory leaks and dynamic database pollution. on 'assert'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 382,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_dynamic_assert_hazard",
+          "message": {
+            "text": "[logic_hazards] Unmanaged assertz/retract creating memory leaks and dynamic database pollution. on 'assert'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 385,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_dynamic_assert_hazard",
+          "message": {
+            "text": "[logic_hazards] Unmanaged assertz/retract creating memory leaks and dynamic database pollution. on 'asserta'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 388,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_dynamic_assert_hazard",
+          "message": {
+            "text": "[logic_hazards] Unmanaged assertz/retract creating memory leaks and dynamic database pollution. on 'asserta'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 391,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_dynamic_assert_hazard",
+          "message": {
+            "text": "[logic_hazards] Unmanaged assertz/retract creating memory leaks and dynamic database pollution. on 'assert'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 459,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_dynamic_assert_hazard",
+          "message": {
+            "text": "[logic_hazards] Unmanaged assertz/retract creating memory leaks and dynamic database pollution. on 'assert'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 460,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_dynamic_assert_hazard",
+          "message": {
+            "text": "[logic_hazards] Unmanaged assertz/retract creating memory leaks and dynamic database pollution. on 'asserta'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 463,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_dynamic_assert_hazard",
+          "message": {
+            "text": "[logic_hazards] Unmanaged assertz/retract creating memory leaks and dynamic database pollution. on 'asserta'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 464,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_dynamic_assert_hazard",
+          "message": {
+            "text": "[logic_hazards] Unmanaged assertz/retract creating memory leaks and dynamic database pollution. on 'assert'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 472,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_dynamic_assert_hazard",
+          "message": {
+            "text": "[logic_hazards] Unmanaged assertz/retract creating memory leaks and dynamic database pollution. on 'assert'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 583,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_dynamic_assert_hazard",
+          "message": {
+            "text": "[logic_hazards] Unmanaged assertz/retract creating memory leaks and dynamic database pollution. on 'assert'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 659,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_dynamic_assert_hazard",
+          "message": {
+            "text": "[logic_hazards] Unmanaged assertz/retract creating memory leaks and dynamic database pollution. on 'assert'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 670,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_dynamic_assert_hazard",
+          "message": {
+            "text": "[logic_hazards] Unmanaged assertz/retract creating memory leaks and dynamic database pollution. on 'assert'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 680,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "monolithic_module_srp",
+          "message": {
+            "text": "[solid_principles] Module exports excessive predicates (>25); decompose into focused submodules. on 'apply'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_apply.pl"
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "monolithic_module_srp",
+          "message": {
+            "text": "[solid_principles] Module exports excessive predicates (>25); decompose into focused submodules. on 'swi_option'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_option.pl"
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "monolithic_module_srp",
+          "message": {
+            "text": "[solid_principles] Module exports excessive predicates (>25); decompose into focused submodules. on 'dcg_basics'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/dcg_basics.pl"
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "monolithic_module_srp",
+          "message": {
+            "text": "[solid_principles] Module exports excessive predicates (>25); decompose into focused submodules. on 'user_db'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 96,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "fat_predicate_arity_srp",
+          "message": {
+            "text": "[solid_principles] Predicate declares excessive arity (>=8); refactor using compound terms or options lists. on 'ord_merge/8'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_option.pl"
+                },
+                "region": {
+                  "startLine": 252,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "impure_state_mutation_srp",
+          "message": {
+            "text": "[solid_principles] Mixing pure logical deduction with assertz/retract side-effects inside relations. on 'set_user_role/2'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 117,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "impure_state_mutation_srp",
+          "message": {
+            "text": "[solid_principles] Mixing pure logical deduction with assertz/retract side-effects inside relations. on 'compile_persistent/3'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 190,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "impure_state_mutation_srp",
+          "message": {
+            "text": "[solid_principles] Mixing pure logical deduction with assertz/retract side-effects inside relations. on 'set_dirty/2'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 574,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "impure_state_mutation_srp",
+          "message": {
+            "text": "[solid_principles] Mixing pure logical deduction with assertz/retract side-effects inside relations. on 'db_sync/2'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/real_world/swi_persistency.pl"
+                },
+                "region": {
+                  "startLine": 618,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

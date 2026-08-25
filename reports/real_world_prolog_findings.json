@@ -1,0 +1,3016 @@
+{
+  "target_path": "benchmarks/real_world/swi_apply.pl",
+  "scanned_files_count": 4,
+  "execution_time_seconds": 0.0202,
+  "total_detections": 125,
+  "category_counts": {
+    "logic_constraints": 13,
+    "higher_order_meta": 60,
+    "gof_structural": 2,
+    "gof_behavioral": 18,
+    "logic_hazards": 23,
+    "solid_principles": 9
+  },
+  "detections": [
+    {
+      "pattern_type": "definite_clause_grammar",
+      "category": "logic_constraints",
+      "target_name": "sign",
+      "location": {
+        "file_path": "benchmarks/real_world/dcg_basics.pl",
+        "line_number": 348,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Definite Clause Grammar (Rule --> ...) for declarative syntactic parsing and difference lists.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DCG_RULE",
+          "weight": 0.95,
+          "description": "Definite Clause Grammar (DCG) rule 'sign': 'sign(0'-) --> \"-\".'",
+          "location": "benchmarks/real_world/dcg_basics.pl:348:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "definite_clause_grammar",
+      "category": "logic_constraints",
+      "target_name": "sign",
+      "location": {
+        "file_path": "benchmarks/real_world/dcg_basics.pl",
+        "line_number": 349,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Definite Clause Grammar (Rule --> ...) for declarative syntactic parsing and difference lists.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DCG_RULE",
+          "weight": 0.95,
+          "description": "Definite Clause Grammar (DCG) rule 'sign': 'sign(0'+) --> \"+\".'",
+          "location": "benchmarks/real_world/dcg_basics.pl:349:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "definite_clause_grammar",
+      "category": "logic_constraints",
+      "target_name": "dot",
+      "location": {
+        "file_path": "benchmarks/real_world/dcg_basics.pl",
+        "line_number": 351,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Definite Clause Grammar (Rule --> ...) for declarative syntactic parsing and difference lists.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DCG_RULE",
+          "weight": 0.95,
+          "description": "Definite Clause Grammar (DCG) rule 'dot': 'dot --> \".\".'",
+          "location": "benchmarks/real_world/dcg_basics.pl:351:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "definite_clause_grammar",
+      "category": "logic_constraints",
+      "target_name": "exp",
+      "location": {
+        "file_path": "benchmarks/real_world/dcg_basics.pl",
+        "line_number": 353,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Definite Clause Grammar (Rule --> ...) for declarative syntactic parsing and difference lists.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DCG_RULE",
+          "weight": 0.95,
+          "description": "Definite Clause Grammar (DCG) rule 'exp': 'exp --> \"e\".'",
+          "location": "benchmarks/real_world/dcg_basics.pl:353:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "definite_clause_grammar",
+      "category": "logic_constraints",
+      "target_name": "exp",
+      "location": {
+        "file_path": "benchmarks/real_world/dcg_basics.pl",
+        "line_number": 354,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Definite Clause Grammar (Rule --> ...) for declarative syntactic parsing and difference lists.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DCG_RULE",
+          "weight": 0.95,
+          "description": "Definite Clause Grammar (DCG) rule 'exp': 'exp --> \"E\".'",
+          "location": "benchmarks/real_world/dcg_basics.pl:354:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "definite_clause_grammar",
+      "category": "logic_constraints",
+      "target_name": "eol",
+      "location": {
+        "file_path": "benchmarks/real_world/dcg_basics.pl",
+        "line_number": 430,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Definite Clause Grammar (Rule --> ...) for declarative syntactic parsing and difference lists.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DCG_RULE",
+          "weight": 0.95,
+          "description": "Definite Clause Grammar (DCG) rule 'eol': 'eol --> \"\\n\", !.'",
+          "location": "benchmarks/real_world/dcg_basics.pl:430:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "definite_clause_grammar",
+      "category": "logic_constraints",
+      "target_name": "eol",
+      "location": {
+        "file_path": "benchmarks/real_world/dcg_basics.pl",
+        "line_number": 431,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Definite Clause Grammar (Rule --> ...) for declarative syntactic parsing and difference lists.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DCG_RULE",
+          "weight": 0.95,
+          "description": "Definite Clause Grammar (DCG) rule 'eol': 'eol --> \"\\r\\n\", !.'",
+          "location": "benchmarks/real_world/dcg_basics.pl:431:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "definite_clause_grammar",
+      "category": "logic_constraints",
+      "target_name": "eol",
+      "location": {
+        "file_path": "benchmarks/real_world/dcg_basics.pl",
+        "line_number": 432,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Definite Clause Grammar (Rule --> ...) for declarative syntactic parsing and difference lists.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DCG_RULE",
+          "weight": 0.95,
+          "description": "Definite Clause Grammar (DCG) rule 'eol': 'eol --> eos.'",
+          "location": "benchmarks/real_world/dcg_basics.pl:432:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "definite_clause_grammar",
+      "category": "logic_constraints",
+      "target_name": "prolog_id_cont",
+      "location": {
+        "file_path": "benchmarks/real_world/dcg_basics.pl",
+        "line_number": 475,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Definite Clause Grammar (Rule --> ...) for declarative syntactic parsing and difference lists.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DCG_RULE",
+          "weight": 0.95,
+          "description": "Definite Clause Grammar (DCG) rule 'prolog_id_cont': 'prolog_id_cont([]) --> \"\".'",
+          "location": "benchmarks/real_world/dcg_basics.pl:475:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "clpr_real_constraint_solving",
+      "category": "logic_constraints",
+      "target_name": "CLP(R/Q)",
+      "location": {
+        "file_path": "benchmarks/real_world/dcg_basics.pl",
+        "line_number": 334,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Constraint Logic Programming over Real/Rational numbers ({Equations}) for algebraic reasoning.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_CLPR_CONSTRAINT",
+          "weight": 0.92,
+          "description": "CLP(R/Q) Real/Rational constraint solving: '->  {F = [0'., DF0|DF]}'",
+          "location": "benchmarks/real_world/dcg_basics.pl:334:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "clpr_real_constraint_solving",
+      "category": "logic_constraints",
+      "target_name": "CLP(R/Q)",
+      "location": {
+        "file_path": "benchmarks/real_world/dcg_basics.pl",
+        "line_number": 335,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Constraint Logic Programming over Real/Rational numbers ({Equations}) for algebraic reasoning.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_CLPR_CONSTRAINT",
+          "weight": 0.92,
+          "description": "CLP(R/Q) Real/Rational constraint solving: ';   {F = []}'",
+          "location": "benchmarks/real_world/dcg_basics.pl:335:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "clpr_real_constraint_solving",
+      "category": "logic_constraints",
+      "target_name": "CLP(R/Q)",
+      "location": {
+        "file_path": "benchmarks/real_world/dcg_basics.pl",
+        "line_number": 339,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Constraint Logic Programming over Real/Rational numbers ({Equations}) for algebraic reasoning.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_CLPR_CONSTRAINT",
+          "weight": 0.92,
+          "description": "CLP(R/Q) Real/Rational constraint solving: '{E=[0'e|DI]}'",
+          "location": "benchmarks/real_world/dcg_basics.pl:339:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "clpr_real_constraint_solving",
+      "category": "logic_constraints",
+      "target_name": "CLP(R/Q)",
+      "location": {
+        "file_path": "benchmarks/real_world/dcg_basics.pl",
+        "line_number": 340,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Constraint Logic Programming over Real/Rational numbers ({Equations}) for algebraic reasoning.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_CLPR_CONSTRAINT",
+          "weight": 0.92,
+          "description": "CLP(R/Q) Real/Rational constraint solving: ';   {E = []}'",
+          "location": "benchmarks/real_world/dcg_basics.pl:340:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "maplist",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 70,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'maplist'",
+          "location": "benchmarks/real_world/swi_apply.pl:70:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "maplist",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 71,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'maplist'",
+          "location": "benchmarks/real_world/swi_apply.pl:71:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "include",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 82,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'include'",
+          "location": "benchmarks/real_world/swi_apply.pl:82:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "exclude",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 83,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'exclude'",
+          "location": "benchmarks/real_world/swi_apply.pl:83:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "partition",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 84,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'partition'",
+          "location": "benchmarks/real_world/swi_apply.pl:84:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "partition",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 85,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'partition'",
+          "location": "benchmarks/real_world/swi_apply.pl:85:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "maplist",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 86,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'maplist'",
+          "location": "benchmarks/real_world/swi_apply.pl:86:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "maplist",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 87,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'maplist'",
+          "location": "benchmarks/real_world/swi_apply.pl:87:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "maplist",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 88,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'maplist'",
+          "location": "benchmarks/real_world/swi_apply.pl:88:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "maplist",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 89,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'maplist'",
+          "location": "benchmarks/real_world/swi_apply.pl:89:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "convlist",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 90,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'convlist'",
+          "location": "benchmarks/real_world/swi_apply.pl:90:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "foldl",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 91,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'foldl'",
+          "location": "benchmarks/real_world/swi_apply.pl:91:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "foldl",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 92,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'foldl'",
+          "location": "benchmarks/real_world/swi_apply.pl:92:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "foldl",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 93,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'foldl'",
+          "location": "benchmarks/real_world/swi_apply.pl:93:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "foldl",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 94,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'foldl'",
+          "location": "benchmarks/real_world/swi_apply.pl:94:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "include",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 110,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'include'",
+          "location": "benchmarks/real_world/swi_apply.pl:110:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "include",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 111,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'include'",
+          "location": "benchmarks/real_world/swi_apply.pl:111:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "include",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 116,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'include'",
+          "location": "benchmarks/real_world/swi_apply.pl:116:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "exclude",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 126,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'exclude'",
+          "location": "benchmarks/real_world/swi_apply.pl:126:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "exclude",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 127,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'exclude'",
+          "location": "benchmarks/real_world/swi_apply.pl:127:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "exclude",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 132,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'exclude'",
+          "location": "benchmarks/real_world/swi_apply.pl:132:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "partition",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 143,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'partition'",
+          "location": "benchmarks/real_world/swi_apply.pl:143:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "partition",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 144,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'partition'",
+          "location": "benchmarks/real_world/swi_apply.pl:144:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "partition",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 147,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'partition'",
+          "location": "benchmarks/real_world/swi_apply.pl:147:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "partition",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 149,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'partition'",
+          "location": "benchmarks/real_world/swi_apply.pl:149:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "partition",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 162,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'partition'",
+          "location": "benchmarks/real_world/swi_apply.pl:162:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "partition",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 163,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'partition'",
+          "location": "benchmarks/real_world/swi_apply.pl:163:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "partition",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 170,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'partition'",
+          "location": "benchmarks/real_world/swi_apply.pl:170:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "partition",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 174,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'partition'",
+          "location": "benchmarks/real_world/swi_apply.pl:174:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "partition",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 178,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'partition'",
+          "location": "benchmarks/real_world/swi_apply.pl:178:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "maplist",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 209,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'maplist'",
+          "location": "benchmarks/real_world/swi_apply.pl:209:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "maplist",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 210,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'maplist'",
+          "location": "benchmarks/real_world/swi_apply.pl:210:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "maplist",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 212,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'maplist'",
+          "location": "benchmarks/real_world/swi_apply.pl:212:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "maplist",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 214,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'maplist'",
+          "location": "benchmarks/real_world/swi_apply.pl:214:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "maplist",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 215,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'maplist'",
+          "location": "benchmarks/real_world/swi_apply.pl:215:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "maplist",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 217,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'maplist'",
+          "location": "benchmarks/real_world/swi_apply.pl:217:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "maplist",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 219,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'maplist'",
+          "location": "benchmarks/real_world/swi_apply.pl:219:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "maplist",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 220,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'maplist'",
+          "location": "benchmarks/real_world/swi_apply.pl:220:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "maplist",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 222,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'maplist'",
+          "location": "benchmarks/real_world/swi_apply.pl:222:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "maplist",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 224,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'maplist'",
+          "location": "benchmarks/real_world/swi_apply.pl:224:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "maplist",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 225,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'maplist'",
+          "location": "benchmarks/real_world/swi_apply.pl:225:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "maplist",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 227,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'maplist'",
+          "location": "benchmarks/real_world/swi_apply.pl:227:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "convlist",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 244,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'convlist'",
+          "location": "benchmarks/real_world/swi_apply.pl:244:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "convlist",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 245,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'convlist'",
+          "location": "benchmarks/real_world/swi_apply.pl:245:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "convlist",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 248,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'convlist'",
+          "location": "benchmarks/real_world/swi_apply.pl:248:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "convlist",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 249,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'convlist'",
+          "location": "benchmarks/real_world/swi_apply.pl:249:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "foldl",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 285,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'foldl'",
+          "location": "benchmarks/real_world/swi_apply.pl:285:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "foldl",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 286,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'foldl'",
+          "location": "benchmarks/real_world/swi_apply.pl:286:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "foldl",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 288,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'foldl'",
+          "location": "benchmarks/real_world/swi_apply.pl:288:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "foldl",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 291,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'foldl'",
+          "location": "benchmarks/real_world/swi_apply.pl:291:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "foldl",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 292,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'foldl'",
+          "location": "benchmarks/real_world/swi_apply.pl:292:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "foldl",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 294,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'foldl'",
+          "location": "benchmarks/real_world/swi_apply.pl:294:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "foldl",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 297,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'foldl'",
+          "location": "benchmarks/real_world/swi_apply.pl:297:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "foldl",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 298,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'foldl'",
+          "location": "benchmarks/real_world/swi_apply.pl:298:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "foldl",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 300,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'foldl'",
+          "location": "benchmarks/real_world/swi_apply.pl:300:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "foldl",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 303,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'foldl'",
+          "location": "benchmarks/real_world/swi_apply.pl:303:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "foldl",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 304,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'foldl'",
+          "location": "benchmarks/real_world/swi_apply.pl:304:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "foldl",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 306,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'foldl'",
+          "location": "benchmarks/real_world/swi_apply.pl:306:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "higher_order_maplist",
+      "category": "higher_order_meta",
+      "target_name": "maplist",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 373,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_HIGHER_ORDER_PREDICATE",
+          "weight": 0.92,
+          "description": "Higher-order list transformation predicate 'maplist'",
+          "location": "benchmarks/real_world/swi_apply.pl:373:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "all_solutions_aggregation",
+      "category": "higher_order_meta",
+      "target_name": "aggregate_all",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 428,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.9,
+        "percentage": 90,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Second-order aggregation predicates (findall/3, setof/3, bagof/3) collecting solution sets.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_ALL_SOLUTIONS",
+          "weight": 0.9,
+          "description": "All-solutions aggregation second-order predicate 'aggregate_all'",
+          "location": "benchmarks/real_world/swi_persistency.pl:428:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_proxy",
+      "category": "gof_structural",
+      "target_name": "term_expansion",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 371,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.9,
+        "percentage": 90,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Structural pattern intercepting and rewriting goals via goal_expansion/2 or term_expansion/2.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_PROXY",
+          "weight": 0.9,
+          "description": "GoF Proxy intercepting and rewriting goals via macro hook 'term_expansion'",
+          "location": "benchmarks/real_world/swi_apply.pl:371:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_proxy",
+      "category": "gof_structural",
+      "target_name": "term_expansion",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 272,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.9,
+        "percentage": 90,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Structural pattern intercepting and rewriting goals via goal_expansion/2 or term_expansion/2.",
+      "evidence": [
+        {
+          "rule_name": "STRUCTURAL_PROXY",
+          "weight": 0.9,
+          "description": "GoF Proxy intercepting and rewriting goals via macro hook 'term_expansion'",
+          "location": "benchmarks/real_world/swi_persistency.pl:272:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_state",
+      "category": "gof_behavioral",
+      "target_name": "foldl",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 286,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern threading explicit state variables (State0 -> State1 -> StateN) through relations.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_STATE",
+          "weight": 0.95,
+          "description": "Predicate 'foldl' implements GoF State pattern threading explicit state transitions",
+          "location": "benchmarks/real_world/swi_apply.pl:286:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_state",
+      "category": "gof_behavioral",
+      "target_name": "foldl",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 292,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern threading explicit state variables (State0 -> State1 -> StateN) through relations.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_STATE",
+          "weight": 0.95,
+          "description": "Predicate 'foldl' implements GoF State pattern threading explicit state transitions",
+          "location": "benchmarks/real_world/swi_apply.pl:292:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_state",
+      "category": "gof_behavioral",
+      "target_name": "foldl",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 298,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern threading explicit state variables (State0 -> State1 -> StateN) through relations.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_STATE",
+          "weight": 0.95,
+          "description": "Predicate 'foldl' implements GoF State pattern threading explicit state transitions",
+          "location": "benchmarks/real_world/swi_apply.pl:298:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_state",
+      "category": "gof_behavioral",
+      "target_name": "foldl",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 304,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern threading explicit state variables (State0 -> State1 -> StateN) through relations.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_STATE",
+          "weight": 0.95,
+          "description": "Predicate 'foldl' implements GoF State pattern threading explicit state transitions",
+          "location": "benchmarks/real_world/swi_apply.pl:304:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_state",
+      "category": "gof_behavioral",
+      "target_name": "get_option",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_option.pl",
+        "line_number": 175,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern threading explicit state variables (State0 -> State1 -> StateN) through relations.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_STATE",
+          "weight": 0.95,
+          "description": "Predicate 'get_option' implements GoF State pattern threading explicit state transitions",
+          "location": "benchmarks/real_world/swi_option.pl:175:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_state",
+      "category": "gof_behavioral",
+      "target_name": "get_option",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_option.pl",
+        "line_number": 178,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern threading explicit state variables (State0 -> State1 -> StateN) through relations.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_STATE",
+          "weight": 0.95,
+          "description": "Predicate 'get_option' implements GoF State pattern threading explicit state transitions",
+          "location": "benchmarks/real_world/swi_option.pl:178:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_state",
+      "category": "gof_behavioral",
+      "target_name": "mkval",
+      "location": {
+        "file_path": "benchmarks/real_world/dcg_basics.pl",
+        "line_number": 417,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern threading explicit state variables (State0 -> State1 -> StateN) through relations.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_STATE",
+          "weight": 0.95,
+          "description": "Predicate 'mkval' implements GoF State pattern threading explicit state transitions",
+          "location": "benchmarks/real_world/dcg_basics.pl:417:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_visitor",
+      "category": "gof_behavioral",
+      "target_name": "TermVisitor",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_option.pl",
+        "line_number": 295,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern traversing compound terms using univ (=..) and term_variables/2.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_VISITOR",
+          "weight": 0.92,
+          "description": "GoF Visitor compound term traversal via univ (=..) or term reflection: 'H =.. [Name,Value].'",
+          "location": "benchmarks/real_world/swi_option.pl:295:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_visitor",
+      "category": "gof_behavioral",
+      "target_name": "TermVisitor",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_option.pl",
+        "line_number": 298,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern traversing compound terms using univ (=..) and term_variables/2.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_VISITOR",
+          "weight": 0.92,
+          "description": "GoF Visitor compound term traversal via univ (=..) or term reflection: 'H =.. [Name,Value].'",
+          "location": "benchmarks/real_world/swi_option.pl:298:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_visitor",
+      "category": "gof_behavioral",
+      "target_name": "TermVisitor",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_option.pl",
+        "line_number": 344,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern traversing compound terms using univ (=..) and term_variables/2.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_VISITOR",
+          "weight": 0.92,
+          "description": "GoF Visitor compound term traversal via univ (=..) or term reflection: 'O0 =.. [Name,V0],'",
+          "location": "benchmarks/real_world/swi_option.pl:344:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_visitor",
+      "category": "gof_behavioral",
+      "target_name": "TermVisitor",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_option.pl",
+        "line_number": 348,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern traversing compound terms using univ (=..) and term_variables/2.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_VISITOR",
+          "weight": 0.92,
+          "description": "GoF Visitor compound term traversal via univ (=..) or term reflection: 'O =.. [Name,M:V].'",
+          "location": "benchmarks/real_world/swi_option.pl:348:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_visitor",
+      "category": "gof_behavioral",
+      "target_name": "TermVisitor",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 221,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern traversing compound terms using univ (=..) and term_variables/2.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_VISITOR",
+          "weight": 0.92,
+          "description": "GoF Visitor compound term traversal via univ (=..) or term reflection: 'Head =.. [PredName|Args],'",
+          "location": "benchmarks/real_world/swi_persistency.pl:221:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_visitor",
+      "category": "gof_behavioral",
+      "target_name": "TermVisitor",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 222,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern traversing compound terms using univ (=..) and term_variables/2.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_VISITOR",
+          "weight": 0.92,
+          "description": "GoF Visitor compound term traversal via univ (=..) or term reflection: 'Assert =.. [Name|Args],'",
+          "location": "benchmarks/real_world/swi_persistency.pl:222:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_visitor",
+      "category": "gof_behavioral",
+      "target_name": "TermVisitor",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 225,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern traversing compound terms using univ (=..) and term_variables/2.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_VISITOR",
+          "weight": 0.92,
+          "description": "GoF Visitor compound term traversal via univ (=..) or term reflection: 'DBAction =.. [DBActionName, Module:Assert],'",
+          "location": "benchmarks/real_world/swi_persistency.pl:225:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_visitor",
+      "category": "gof_behavioral",
+      "target_name": "TermVisitor",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 247,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern traversing compound terms using univ (=..) and term_variables/2.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_VISITOR",
+          "weight": 0.92,
+          "description": "GoF Visitor compound term traversal via univ (=..) or term reflection: 'Head =.. [PredName|Args],'",
+          "location": "benchmarks/real_world/swi_persistency.pl:247:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_visitor",
+      "category": "gof_behavioral",
+      "target_name": "TermVisitor",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 248,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern traversing compound terms using univ (=..) and term_variables/2.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_VISITOR",
+          "weight": 0.92,
+          "description": "GoF Visitor compound term traversal via univ (=..) or term reflection: 'Retract =.. [Name|Args],'",
+          "location": "benchmarks/real_world/swi_persistency.pl:248:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_visitor",
+      "category": "gof_behavioral",
+      "target_name": "TermVisitor",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 258,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern traversing compound terms using univ (=..) and term_variables/2.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_VISITOR",
+          "weight": 0.92,
+          "description": "GoF Visitor compound term traversal via univ (=..) or term reflection: 'Head =.. [PredName|Args],'",
+          "location": "benchmarks/real_world/swi_persistency.pl:258:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "gof_visitor",
+      "category": "gof_behavioral",
+      "target_name": "TermVisitor",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 259,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Behavioral pattern traversing compound terms using univ (=..) and term_variables/2.",
+      "evidence": [
+        {
+          "rule_name": "BEHAVIORAL_VISITOR",
+          "weight": 0.92,
+          "description": "GoF Visitor compound term traversal via univ (=..) or term reflection: 'Retract =.. [Name|Args],'",
+          "location": "benchmarks/real_world/swi_persistency.pl:259:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_cut_red_cut_hazard",
+      "category": "logic_hazards",
+      "target_name": "!",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_option.pl",
+        "line_number": 245,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Procedural cut (!) altering logical semantics and breaking commutativity/declarative purity.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_RED_CUT_HAZARD",
+          "weight": 0.95,
+          "description": "Procedural cut (!) alters declarative semantics and breaks commutativity: 'ord_merge([], L, L) :- !.'",
+          "location": "benchmarks/real_world/swi_option.pl:245:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_cut_red_cut_hazard",
+      "category": "logic_hazards",
+      "target_name": "!",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_option.pl",
+        "line_number": 246,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Procedural cut (!) altering logical semantics and breaking commutativity/declarative purity.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_RED_CUT_HAZARD",
+          "weight": 0.95,
+          "description": "Procedural cut (!) alters declarative semantics and breaks commutativity: 'ord_merge(L, [], L) :- !.'",
+          "location": "benchmarks/real_world/swi_option.pl:246:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_cut_red_cut_hazard",
+      "category": "logic_hazards",
+      "target_name": "!",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 265,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Procedural cut (!) altering logical semantics and breaking commutativity/declarative purity.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_RED_CUT_HAZARD",
+          "weight": 0.95,
+          "description": "Procedural cut (!) alters declarative semantics and breaks commutativity: 'qualify(Module, Module, Head, Head) :- !.'",
+          "location": "benchmarks/real_world/swi_persistency.pl:265:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_cut_red_cut_hazard",
+      "category": "logic_hazards",
+      "target_name": "!",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 381,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Procedural cut (!) altering logical semantics and breaking commutativity/declarative purity.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_RED_CUT_HAZARD",
+          "weight": 0.95,
+          "description": "Procedural cut (!) alters declarative semantics and breaks commutativity: 'load_db(end_of_file, _, _) :- !.'",
+          "location": "benchmarks/real_world/swi_persistency.pl:381:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_cut_red_cut_hazard",
+      "category": "logic_hazards",
+      "target_name": "!",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 576,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Procedural cut (!) altering logical semantics and breaking commutativity/declarative purity.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_RED_CUT_HAZARD",
+          "weight": 0.95,
+          "description": "Procedural cut (!) alters declarative semantics and breaks commutativity: 'set_dirty(_, 0) :- !.'",
+          "location": "benchmarks/real_world/swi_persistency.pl:576:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_cut_red_cut_hazard",
+      "category": "logic_hazards",
+      "target_name": "!",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 691,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.95,
+        "percentage": 95,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Procedural cut (!) altering logical semantics and breaking commutativity/declarative purity.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_RED_CUT_HAZARD",
+          "weight": 0.95,
+          "description": "Procedural cut (!) alters declarative semantics and breaks commutativity: 'db_sync(_, nop) :- !.'",
+          "location": "benchmarks/real_world/swi_persistency.pl:691:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_dynamic_assert_hazard",
+      "category": "logic_hazards",
+      "target_name": "assert",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 323,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Unmanaged assertz/retract creating memory leaks and dynamic database pollution.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DYNAMIC_ASSERT_HAZARD",
+          "weight": 0.92,
+          "description": "Unsafe dynamic assertion 'assert' risks global state leakage and database pollution",
+          "location": "benchmarks/real_world/swi_persistency.pl:323:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_dynamic_assert_hazard",
+      "category": "logic_hazards",
+      "target_name": "assert",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 340,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Unmanaged assertz/retract creating memory leaks and dynamic database pollution.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DYNAMIC_ASSERT_HAZARD",
+          "weight": 0.92,
+          "description": "Unsafe dynamic assertion 'assert' risks global state leakage and database pollution",
+          "location": "benchmarks/real_world/swi_persistency.pl:340:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_dynamic_assert_hazard",
+      "category": "logic_hazards",
+      "target_name": "assert",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 352,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Unmanaged assertz/retract creating memory leaks and dynamic database pollution.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DYNAMIC_ASSERT_HAZARD",
+          "weight": 0.92,
+          "description": "Unsafe dynamic assertion 'assert' risks global state leakage and database pollution",
+          "location": "benchmarks/real_world/swi_persistency.pl:352:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_dynamic_assert_hazard",
+      "category": "logic_hazards",
+      "target_name": "assert",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 369,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Unmanaged assertz/retract creating memory leaks and dynamic database pollution.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DYNAMIC_ASSERT_HAZARD",
+          "weight": 0.92,
+          "description": "Unsafe dynamic assertion 'assert' risks global state leakage and database pollution",
+          "location": "benchmarks/real_world/swi_persistency.pl:369:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_dynamic_assert_hazard",
+      "category": "logic_hazards",
+      "target_name": "assert",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 382,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Unmanaged assertz/retract creating memory leaks and dynamic database pollution.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DYNAMIC_ASSERT_HAZARD",
+          "weight": 0.92,
+          "description": "Unsafe dynamic assertion 'assert' risks global state leakage and database pollution",
+          "location": "benchmarks/real_world/swi_persistency.pl:382:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_dynamic_assert_hazard",
+      "category": "logic_hazards",
+      "target_name": "assert",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 385,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Unmanaged assertz/retract creating memory leaks and dynamic database pollution.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DYNAMIC_ASSERT_HAZARD",
+          "weight": 0.92,
+          "description": "Unsafe dynamic assertion 'assert' risks global state leakage and database pollution",
+          "location": "benchmarks/real_world/swi_persistency.pl:385:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_dynamic_assert_hazard",
+      "category": "logic_hazards",
+      "target_name": "asserta",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 388,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Unmanaged assertz/retract creating memory leaks and dynamic database pollution.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DYNAMIC_ASSERT_HAZARD",
+          "weight": 0.92,
+          "description": "Unsafe dynamic assertion 'asserta' risks global state leakage and database pollution",
+          "location": "benchmarks/real_world/swi_persistency.pl:388:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_dynamic_assert_hazard",
+      "category": "logic_hazards",
+      "target_name": "asserta",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 391,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Unmanaged assertz/retract creating memory leaks and dynamic database pollution.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DYNAMIC_ASSERT_HAZARD",
+          "weight": 0.92,
+          "description": "Unsafe dynamic assertion 'asserta' risks global state leakage and database pollution",
+          "location": "benchmarks/real_world/swi_persistency.pl:391:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_dynamic_assert_hazard",
+      "category": "logic_hazards",
+      "target_name": "assert",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 459,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Unmanaged assertz/retract creating memory leaks and dynamic database pollution.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DYNAMIC_ASSERT_HAZARD",
+          "weight": 0.92,
+          "description": "Unsafe dynamic assertion 'assert' risks global state leakage and database pollution",
+          "location": "benchmarks/real_world/swi_persistency.pl:459:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_dynamic_assert_hazard",
+      "category": "logic_hazards",
+      "target_name": "assert",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 460,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Unmanaged assertz/retract creating memory leaks and dynamic database pollution.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DYNAMIC_ASSERT_HAZARD",
+          "weight": 0.92,
+          "description": "Unsafe dynamic assertion 'assert' risks global state leakage and database pollution",
+          "location": "benchmarks/real_world/swi_persistency.pl:460:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_dynamic_assert_hazard",
+      "category": "logic_hazards",
+      "target_name": "asserta",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 463,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Unmanaged assertz/retract creating memory leaks and dynamic database pollution.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DYNAMIC_ASSERT_HAZARD",
+          "weight": 0.92,
+          "description": "Unsafe dynamic assertion 'asserta' risks global state leakage and database pollution",
+          "location": "benchmarks/real_world/swi_persistency.pl:463:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_dynamic_assert_hazard",
+      "category": "logic_hazards",
+      "target_name": "asserta",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 464,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Unmanaged assertz/retract creating memory leaks and dynamic database pollution.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DYNAMIC_ASSERT_HAZARD",
+          "weight": 0.92,
+          "description": "Unsafe dynamic assertion 'asserta' risks global state leakage and database pollution",
+          "location": "benchmarks/real_world/swi_persistency.pl:464:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_dynamic_assert_hazard",
+      "category": "logic_hazards",
+      "target_name": "assert",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 472,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Unmanaged assertz/retract creating memory leaks and dynamic database pollution.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DYNAMIC_ASSERT_HAZARD",
+          "weight": 0.92,
+          "description": "Unsafe dynamic assertion 'assert' risks global state leakage and database pollution",
+          "location": "benchmarks/real_world/swi_persistency.pl:472:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_dynamic_assert_hazard",
+      "category": "logic_hazards",
+      "target_name": "assert",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 583,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Unmanaged assertz/retract creating memory leaks and dynamic database pollution.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DYNAMIC_ASSERT_HAZARD",
+          "weight": 0.92,
+          "description": "Unsafe dynamic assertion 'assert' risks global state leakage and database pollution",
+          "location": "benchmarks/real_world/swi_persistency.pl:583:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_dynamic_assert_hazard",
+      "category": "logic_hazards",
+      "target_name": "assert",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 659,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Unmanaged assertz/retract creating memory leaks and dynamic database pollution.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DYNAMIC_ASSERT_HAZARD",
+          "weight": 0.92,
+          "description": "Unsafe dynamic assertion 'assert' risks global state leakage and database pollution",
+          "location": "benchmarks/real_world/swi_persistency.pl:659:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_dynamic_assert_hazard",
+      "category": "logic_hazards",
+      "target_name": "assert",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 670,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Unmanaged assertz/retract creating memory leaks and dynamic database pollution.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DYNAMIC_ASSERT_HAZARD",
+          "weight": 0.92,
+          "description": "Unsafe dynamic assertion 'assert' risks global state leakage and database pollution",
+          "location": "benchmarks/real_world/swi_persistency.pl:670:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "unsafe_dynamic_assert_hazard",
+      "category": "logic_hazards",
+      "target_name": "assert",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 680,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.92,
+        "percentage": 92,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Unmanaged assertz/retract creating memory leaks and dynamic database pollution.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_DYNAMIC_ASSERT_HAZARD",
+          "weight": 0.92,
+          "description": "Unsafe dynamic assertion 'assert' risks global state leakage and database pollution",
+          "location": "benchmarks/real_world/swi_persistency.pl:680:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "monolithic_module_srp",
+      "category": "solid_principles",
+      "target_name": "apply",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_apply.pl",
+        "line_number": 37,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.85,
+        "percentage": 85,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Module exports excessive predicates (>25); decompose into focused submodules.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_MONOLITHIC_MODULE",
+          "weight": 0.85,
+          "description": "Module 'apply' exports 17 predicates and has 36 declarations, violating SRP",
+          "location": "benchmarks/real_world/swi_apply.pl:37:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "monolithic_module_srp",
+      "category": "solid_principles",
+      "target_name": "swi_option",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_option.pl",
+        "line_number": 38,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.85,
+        "percentage": 85,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Module exports excessive predicates (>25); decompose into focused submodules.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_MONOLITHIC_MODULE",
+          "weight": 0.85,
+          "description": "Module 'swi_option' exports 7 predicates and has 46 declarations, violating SRP",
+          "location": "benchmarks/real_world/swi_option.pl:38:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "monolithic_module_srp",
+      "category": "solid_principles",
+      "target_name": "dcg_basics",
+      "location": {
+        "file_path": "benchmarks/real_world/dcg_basics.pl",
+        "line_number": 37,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.85,
+        "percentage": 85,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Module exports excessive predicates (>25); decompose into focused submodules.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_MONOLITHIC_MODULE",
+          "weight": 0.85,
+          "description": "Module 'dcg_basics' exports 24 predicates and has 54 declarations, violating SRP",
+          "location": "benchmarks/real_world/dcg_basics.pl:37:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "monolithic_module_srp",
+      "category": "solid_principles",
+      "target_name": "user_db",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 96,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.85,
+        "percentage": 85,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Module exports excessive predicates (>25); decompose into focused submodules.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_MONOLITHIC_MODULE",
+          "weight": 0.85,
+          "description": "Module 'user_db' exports 4 predicates and has 77 declarations, violating SRP",
+          "location": "benchmarks/real_world/swi_persistency.pl:96:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "fat_predicate_arity_srp",
+      "category": "solid_principles",
+      "target_name": "ord_merge/8",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_option.pl",
+        "line_number": 252,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.85,
+        "percentage": 85,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Predicate declares excessive arity (>=8); refactor using compound terms or options lists.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_FAT_ARITY",
+          "weight": 0.85,
+          "description": "Predicate 'ord_merge/8' declares excessive arity (8 arguments >= 8)",
+          "location": "benchmarks/real_world/swi_option.pl:252:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "impure_state_mutation_srp",
+      "category": "solid_principles",
+      "target_name": "set_user_role/2",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 117,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.88,
+        "percentage": 88,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Mixing pure logical deduction with assertz/retract side-effects inside relations.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_IMPURE_MUTATION",
+          "weight": 0.88,
+          "description": "Predicate 'set_user_role/2' mixes pure declarative relations with impure side-effects (assertz/retract/IO)",
+          "location": "benchmarks/real_world/swi_persistency.pl:117:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "impure_state_mutation_srp",
+      "category": "solid_principles",
+      "target_name": "compile_persistent/3",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 190,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.88,
+        "percentage": 88,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Mixing pure logical deduction with assertz/retract side-effects inside relations.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_IMPURE_MUTATION",
+          "weight": 0.88,
+          "description": "Predicate 'compile_persistent/3' mixes pure declarative relations with impure side-effects (assertz/retract/IO)",
+          "location": "benchmarks/real_world/swi_persistency.pl:190:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "impure_state_mutation_srp",
+      "category": "solid_principles",
+      "target_name": "set_dirty/2",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 574,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.88,
+        "percentage": 88,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Mixing pure logical deduction with assertz/retract side-effects inside relations.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_IMPURE_MUTATION",
+          "weight": 0.88,
+          "description": "Predicate 'set_dirty/2' mixes pure declarative relations with impure side-effects (assertz/retract/IO)",
+          "location": "benchmarks/real_world/swi_persistency.pl:574:1"
+        }
+      ]
+    },
+    {
+      "pattern_type": "impure_state_mutation_srp",
+      "category": "solid_principles",
+      "target_name": "db_sync/2",
+      "location": {
+        "file_path": "benchmarks/real_world/swi_persistency.pl",
+        "line_number": 618,
+        "column_number": 1
+      },
+      "confidence": {
+        "score": 0.88,
+        "percentage": 88,
+        "level": "VERY_HIGH"
+      },
+      "summary": "Mixing pure logical deduction with assertz/retract side-effects inside relations.",
+      "evidence": [
+        {
+          "rule_name": "PROLOG_IMPURE_MUTATION",
+          "weight": 0.88,
+          "description": "Predicate 'db_sync/2' mixes pure declarative relations with impure side-effects (assertz/retract/IO)",
+          "location": "benchmarks/real_world/swi_persistency.pl:618:1"
+        }
+      ]
+    }
+  ]
+}

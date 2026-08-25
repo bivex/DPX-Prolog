@@ -1,0 +1,1462 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "DPX-Prolog",
+          "informationUri": "https://github.com/bivex/DPX-Prolog",
+          "semanticVersion": "0.1.0",
+          "rules": [
+            {
+              "id": "definite_clause_grammar",
+              "name": "DEFINITE_CLAUSE_GRAMMAR",
+              "shortDescription": {
+                "text": "Definite Clause Grammar (Rule --> ...) for declarative syntactic parsing and difference lists."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "clpfd_constraint_reasoning",
+              "name": "CLPFD_CONSTRAINT_REASONING",
+              "shortDescription": {
+                "text": "Constraint Logic Programming over Finite Domains (#=, #>, in, labeling/2) for combinatorial search."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "clpr_real_constraint_solving",
+              "name": "CLPR_REAL_CONSTRAINT_SOLVING",
+              "shortDescription": {
+                "text": "Constraint Logic Programming over Real/Rational numbers ({Equations}) for algebraic reasoning."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "constraint_handling_rules",
+              "name": "CONSTRAINT_HANDLING_RULES",
+              "shortDescription": {
+                "text": "Committed-choice rule-based language extension (rule @ Head <=> Guard | Body) for user-defined constraint solvers."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "tabling_memoization_slg",
+              "name": "TABLING_MEMOIZATION_SLG",
+              "shortDescription": {
+                "text": "SLG Resolution tabling (:- table Pred/Arity.) preventing infinite loops in cyclic graphs."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "higher_order_maplist",
+              "name": "HIGHER_ORDER_MAPLIST",
+              "shortDescription": {
+                "text": "Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "all_solutions_aggregation",
+              "name": "ALL_SOLUTIONS_AGGREGATION",
+              "shortDescription": {
+                "text": "Second-order aggregation predicates (findall/3, setof/3, bagof/3) collecting solution sets."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "gof_factory_method",
+              "name": "GOF_FACTORY_METHOD",
+              "shortDescription": {
+                "text": "Creational pattern constructing specialized compound functor terms based on type descriptor."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "gof_abstract_factory",
+              "name": "GOF_ABSTRACT_FACTORY",
+              "shortDescription": {
+                "text": "Creational pattern generating families of related logical records without specifying concrete functors."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "gof_builder",
+              "name": "GOF_BUILDER",
+              "shortDescription": {
+                "text": "Creational pattern assembling complex terms stepwise via accumulator threading or DCG grammars."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "gof_prototype",
+              "name": "GOF_PROTOTYPE",
+              "shortDescription": {
+                "text": "Creational pattern cloning terms with fresh variable allocations via copy_term/2 or duplicate_term/2."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "gof_singleton",
+              "name": "GOF_SINGLETON",
+              "shortDescription": {
+                "text": "Creational pattern maintaining a unique dynamic database fact or global variable (nb_setval)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "gof_bridge",
+              "name": "GOF_BRIDGE",
+              "shortDescription": {
+                "text": "Structural pattern decoupling high-level logical relations from backend database/solver drivers."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "gof_composite",
+              "name": "GOF_COMPOSITE",
+              "shortDescription": {
+                "text": "Structural pattern composing terms into recursive tree structures (node/2, tree/3) handled uniformly."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "gof_decorator",
+              "name": "GOF_DECORATOR",
+              "shortDescription": {
+                "text": "Structural pattern dynamically wrapping goal evaluation with pre/post hooks, logging, or caching."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "gof_flyweight",
+              "name": "GOF_FLYWEIGHT",
+              "shortDescription": {
+                "text": "Structural pattern sharing immutable atomic terms and symbol tables using trie indexing."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "gof_proxy",
+              "name": "GOF_PROXY",
+              "shortDescription": {
+                "text": "Structural pattern intercepting and rewriting goals via goal_expansion/2 or term_expansion/2."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "gof_chain_of_responsibility",
+              "name": "GOF_CHAIN_OF_RESPONSIBILITY",
+              "shortDescription": {
+                "text": "Behavioral pattern passing requests through disjunctive clause branches until one succeeds."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "gof_command",
+              "name": "GOF_COMMAND",
+              "shortDescription": {
+                "text": "Behavioral pattern encapsulating an executable goal as a reified term executed via call/N or catch/3."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "gof_interpreter",
+              "name": "GOF_INTERPRETER",
+              "shortDescription": {
+                "text": "Behavioral pattern evaluating domain-specific grammar or AST expression trees."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "gof_iterator",
+              "name": "GOF_ITERATOR",
+              "shortDescription": {
+                "text": "Behavioral pattern generating elements sequentially on backtracking (member/2, between/3)."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "gof_mediator",
+              "name": "GOF_MEDIATOR",
+              "shortDescription": {
+                "text": "Behavioral pattern coordinating colleague predicates through a centralized dynamic blackboard."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "gof_memento",
+              "name": "GOF_MEMENTO",
+              "shortDescription": {
+                "text": "Behavioral pattern recording database snapshots and transactional state checkpoints for rollback."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "gof_observer",
+              "name": "GOF_OBSERVER",
+              "shortDescription": {
+                "text": "Behavioral pattern broadcasting events to registered listener predicates or dynamic hook tables."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "gof_state",
+              "name": "GOF_STATE",
+              "shortDescription": {
+                "text": "Behavioral pattern threading explicit state variables (State0 -> State1 -> StateN) through relations."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "gof_strategy",
+              "name": "GOF_STRATEGY",
+              "shortDescription": {
+                "text": "Behavioral pattern injecting interchangeable algorithmic goal closures into call/N or maplist/N."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "gof_template_method",
+              "name": "GOF_TEMPLATE_METHOD",
+              "shortDescription": {
+                "text": "Behavioral pattern defining skeleton relation calling customizable multifile hook predicates."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "gof_visitor",
+              "name": "GOF_VISITOR",
+              "shortDescription": {
+                "text": "Behavioral pattern traversing compound terms using univ (=..) and term_variables/2."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "unsafe_cut_red_cut_hazard",
+              "name": "UNSAFE_CUT_RED_CUT_HAZARD",
+              "shortDescription": {
+                "text": "Procedural cut (!) altering logical semantics and breaking commutativity/declarative purity."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              }
+            },
+            {
+              "id": "unsafe_term_evaluation_hazard",
+              "name": "UNSAFE_TERM_EVALUATION_HAZARD",
+              "shortDescription": {
+                "text": "Evaluating untrusted goal input via call/N or atom_to_term/3 risking arbitrary code execution."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              }
+            },
+            {
+              "id": "unsafe_dynamic_assert_hazard",
+              "name": "UNSAFE_DYNAMIC_ASSERT_HAZARD",
+              "shortDescription": {
+                "text": "Unmanaged assertz/retract creating memory leaks and dynamic database pollution."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              }
+            },
+            {
+              "id": "unsafe_io_system_hazard",
+              "name": "UNSAFE_IO_SYSTEM_HAZARD",
+              "shortDescription": {
+                "text": "Executing shell commands (shell/1, process_create/3) with unsanitized atom arguments."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              }
+            },
+            {
+              "id": "infinite_left_recursion_hazard",
+              "name": "INFINITE_LEFT_RECURSION_HAZARD",
+              "shortDescription": {
+                "text": "Direct left recursion in clause body causing infinite loops during SLD resolution."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              }
+            },
+            {
+              "id": "uninstantiated_var_negation_hazard",
+              "name": "UNINSTANTIATED_VAR_NEGATION_HAZARD",
+              "shortDescription": {
+                "text": "Calling negation (\\+ or not) on uninstantiated variables producing unsound logical answers."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              }
+            },
+            {
+              "id": "monolithic_module_srp",
+              "name": "MONOLITHIC_MODULE_SRP",
+              "shortDescription": {
+                "text": "Module exports excessive predicates (>25); decompose into focused submodules."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            },
+            {
+              "id": "fat_predicate_arity_srp",
+              "name": "FAT_PREDICATE_ARITY_SRP",
+              "shortDescription": {
+                "text": "Predicate declares excessive arity (>=8); refactor using compound terms or options lists."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "definite_clause_grammar",
+          "message": {
+            "text": "[logic_constraints] Definite Clause Grammar (Rule --> ...) for declarative syntactic parsing and difference lists. on 'waypoint_list'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "definite_clause_grammar",
+          "message": {
+            "text": "[logic_constraints] Definite Clause Grammar (Rule --> ...) for declarative syntactic parsing and difference lists. on 'waypoint_list'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "definite_clause_grammar",
+          "message": {
+            "text": "[logic_constraints] Definite Clause Grammar (Rule --> ...) for declarative syntactic parsing and difference lists. on 'waypoint'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "clpfd_constraint_reasoning",
+          "message": {
+            "text": "[logic_constraints] Constraint Logic Programming over Finite Domains (#=, #>, in, labeling/2) for combinatorial search. on 'CLP(FD)'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "clpfd_constraint_reasoning",
+          "message": {
+            "text": "[logic_constraints] Constraint Logic Programming over Finite Domains (#=, #>, in, labeling/2) for combinatorial search. on 'CLP(FD)'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "clpfd_constraint_reasoning",
+          "message": {
+            "text": "[logic_constraints] Constraint Logic Programming over Finite Domains (#=, #>, in, labeling/2) for combinatorial search. on 'CLP(FD)'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "clpfd_constraint_reasoning",
+          "message": {
+            "text": "[logic_constraints] Constraint Logic Programming over Finite Domains (#=, #>, in, labeling/2) for combinatorial search. on 'CLP(FD)'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "clpfd_constraint_reasoning",
+          "message": {
+            "text": "[logic_constraints] Constraint Logic Programming over Finite Domains (#=, #>, in, labeling/2) for combinatorial search. on 'CLP(FD)'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "clpr_real_constraint_solving",
+          "message": {
+            "text": "[logic_constraints] Constraint Logic Programming over Real/Rational numbers ({Equations}) for algebraic reasoning. on 'CLP(R/Q)'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "clpr_real_constraint_solving",
+          "message": {
+            "text": "[logic_constraints] Constraint Logic Programming over Real/Rational numbers ({Equations}) for algebraic reasoning. on 'CLP(R/Q)'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "constraint_handling_rules",
+          "message": {
+            "text": "[logic_constraints] Committed-choice rule-based language extension (rule @ Head <=> Guard | Body) for user-defined constraint solvers. on 'CHR'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "constraint_handling_rules",
+          "message": {
+            "text": "[logic_constraints] Committed-choice rule-based language extension (rule @ Head <=> Guard | Body) for user-defined constraint solvers. on 'CHR'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "constraint_handling_rules",
+          "message": {
+            "text": "[logic_constraints] Committed-choice rule-based language extension (rule @ Head <=> Guard | Body) for user-defined constraint solvers. on 'CHR'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "constraint_handling_rules",
+          "message": {
+            "text": "[logic_constraints] Committed-choice rule-based language extension (rule @ Head <=> Guard | Body) for user-defined constraint solvers. on 'CHR'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "tabling_memoization_slg",
+          "message": {
+            "text": "[logic_constraints] SLG Resolution tabling (:- table Pred/Arity.) preventing infinite loops in cyclic graphs. on 'shortest_path/3'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'include'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'maplist'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 73,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "higher_order_maplist",
+          "message": {
+            "text": "[higher_order_meta] Declarative higher-order list processing using maplist/N, include/3, exclude/3, or foldl/4. on 'maplist'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 106,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "all_solutions_aggregation",
+          "message": {
+            "text": "[higher_order_meta] Second-order aggregation predicates (findall/3, setof/3, bagof/3) collecting solution sets. on 'findall'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_factory_method",
+          "message": {
+            "text": "[gof_creational] Creational pattern constructing specialized compound functor terms based on type descriptor. on 'create_flight_director'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_factory_method",
+          "message": {
+            "text": "[gof_creational] Creational pattern constructing specialized compound functor terms based on type descriptor. on 'with_waypoint_builder'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_abstract_factory",
+          "message": {
+            "text": "[gof_creational] Creational pattern generating families of related logical records without specifying concrete functors. on 'abstract_factory_avionics'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_builder",
+          "message": {
+            "text": "[gof_creational] Creational pattern assembling complex terms stepwise via accumulator threading or DCG grammars. on 'with_waypoint_builder'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_builder",
+          "message": {
+            "text": "[gof_creational] Creational pattern assembling complex terms stepwise via accumulator threading or DCG grammars. on 'with_strategy'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 104,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_prototype",
+          "message": {
+            "text": "[gof_creational] Creational pattern cloning terms with fresh variable allocations via copy_term/2 or duplicate_term/2. on 'copy_term'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_singleton",
+          "message": {
+            "text": "[gof_creational] Creational pattern maintaining a unique dynamic database fact or global variable (nb_setval). on 'nb_setval'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_bridge",
+          "message": {
+            "text": "[gof_structural] Structural pattern decoupling high-level logical relations from backend database/solver drivers. on 'driver_execute_bridge'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_composite",
+          "message": {
+            "text": "[gof_structural] Structural pattern composing terms into recursive tree structures (node/2, tree/3) handled uniformly. on 'eval_composite_tree'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_decorator",
+          "message": {
+            "text": "[gof_structural] Structural pattern dynamically wrapping goal evaluation with pre/post hooks, logging, or caching. on 'decorate_with_timing'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 91,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_flyweight",
+          "message": {
+            "text": "[gof_structural] Structural pattern sharing immutable atomic terms and symbol tables using trie indexing. on 'trie_lookup'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_proxy",
+          "message": {
+            "text": "[gof_structural] Structural pattern intercepting and rewriting goals via goal_expansion/2 or term_expansion/2. on 'goal_expansion'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 93,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_chain_of_responsibility",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern passing requests through disjunctive clause branches until one succeeds. on 'handle_failure'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 96,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_command",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern encapsulating an executable goal as a reified term executed via call/N or catch/3. on 'driver_execute_bridge'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_command",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern encapsulating an executable goal as a reified term executed via call/N or catch/3. on 'execute_autopilot_cmd'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 97,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_interpreter",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern evaluating domain-specific grammar or AST expression trees. on 'eval_ast_expr'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 98,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_iterator",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern generating elements sequentially on backtracking (member/2, between/3). on 'iterator_stream'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 99,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_mediator",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern coordinating colleague predicates through a centralized dynamic blackboard. on 'mediator_blackboard_msg'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 100,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_memento",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern recording database snapshots and transactional state checkpoints for rollback. on 'snapshot_memento_state'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 101,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_observer",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern broadcasting events to registered listener predicates or dynamic hook tables. on 'subscribe_alarm_observer'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_state",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern threading explicit state variables (State0 -> State1 -> StateN) through relations. on 'with_waypoint_builder'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_state",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern threading explicit state variables (State0 -> State1 -> StateN) through relations. on 'state_step'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 103,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_strategy",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern injecting interchangeable algorithmic goal closures into call/N or maplist/N. on 'with_strategy'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 104,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_template_method",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern defining skeleton relation calling customizable multifile hook predicates. on 'process_pipeline_flow'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 105,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "gof_visitor",
+          "message": {
+            "text": "[gof_behavioral] Behavioral pattern traversing compound terms using univ (=..) and term_variables/2. on 'TermVisitor'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 106,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_cut_red_cut_hazard",
+          "message": {
+            "text": "[logic_hazards] Procedural cut (!) altering logical semantics and breaking commutativity/declarative purity. on '!'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_cut_red_cut_hazard",
+          "message": {
+            "text": "[logic_hazards] Procedural cut (!) altering logical semantics and breaking commutativity/declarative purity. on '!'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_cut_red_cut_hazard",
+          "message": {
+            "text": "[logic_hazards] Procedural cut (!) altering logical semantics and breaking commutativity/declarative purity. on '!'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_cut_red_cut_hazard",
+          "message": {
+            "text": "[logic_hazards] Procedural cut (!) altering logical semantics and breaking commutativity/declarative purity. on '!'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 113,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_term_evaluation_hazard",
+          "message": {
+            "text": "[logic_hazards] Evaluating untrusted goal input via call/N or atom_to_term/3 risking arbitrary code execution. on 'DynamicGoalExecution'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 117,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_dynamic_assert_hazard",
+          "message": {
+            "text": "[logic_hazards] Unmanaged assertz/retract creating memory leaks and dynamic database pollution. on 'assertz'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 120,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unsafe_io_system_hazard",
+          "message": {
+            "text": "[logic_hazards] Executing shell commands (shell/1, process_create/3) with unsanitized atom arguments. on 'shell'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 123,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "infinite_left_recursion_hazard",
+          "message": {
+            "text": "[logic_hazards] Direct left recursion in clause body causing infinite loops during SLD resolution. on 'shortest_path'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "infinite_left_recursion_hazard",
+          "message": {
+            "text": "[logic_hazards] Direct left recursion in clause body causing infinite loops during SLD resolution. on 'eval_composite_tree'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "infinite_left_recursion_hazard",
+          "message": {
+            "text": "[logic_hazards] Direct left recursion in clause body causing infinite loops during SLD resolution. on 'eval_ast_expr'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 98,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "uninstantiated_var_negation_hazard",
+          "message": {
+            "text": "[logic_hazards] Calling negation (\\+ or not) on uninstantiated variables producing unsound logical answers. on 'UnsoundNegation'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 126,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "monolithic_module_srp",
+          "message": {
+            "text": "[solid_principles] Module exports excessive predicates (>25); decompose into focused submodules. on 'avionics_expert_system'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "fat_predicate_arity_srp",
+          "message": {
+            "text": "[solid_principles] Predicate declares excessive arity (>=8); refactor using compound terms or options lists. on 'fat_telemetry_predicate/10'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/avionics_expert_system.pl"
+                },
+                "region": {
+                  "startLine": 129,
+                  "startColumn": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
