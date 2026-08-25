@@ -126,6 +126,8 @@ dpx-prolog catalog
 
 ---
 
+---
+
 ## 🌐 The DPX Multi-Language Static Analysis Family (33 Languages)
 
 | # | Language | Repository | Ecosystem & Focus |
@@ -152,7 +154,7 @@ dpx-prolog catalog
 | 20 | **Move** | [`bivex/DPX-Move`](https://github.com/bivex/DPX-Move) | Aptos & Sui Resource Safety, Linear Types |
 | 21 | **OCaml** | [`bivex/DPX-OCaml`](https://github.com/bivex/DPX-OCaml) | Algebraic Data Types, Functors, Polymorphism |
 | 22 | **PHP** | [`bivex/DPX-Php`](https://github.com/bivex/DPX-Php) | Modern PHP 8.4, Attributes, Traits, Laravel |
-| 23 | **Prolog** | **[`bivex/DPX-Prolog`](https://github.com/bivex/DPX-Prolog)** | **ISO Prolog, SWI-Prolog, DCG, CLP(FD/R/Q), CHR, Meta-Interpreters** |
+| 23 | **Prolog** | [`bivex/DPX-Prolog`](https://github.com/bivex/DPX-Prolog) | ISO Prolog, SWI-Prolog, DCG, CLP(FD/R/Q), CHR, Meta-Interpreters |
 | 24 | **Puppet** | [`bivex/DPX-Puppet`](https://github.com/bivex/DPX-Puppet) | Puppet DSL, Roles/Profiles, IaC Security, Hiera |
 | 25 | **Python** | [`bivex/DPX-Py`](https://github.com/bivex/DPX-Py) | Metaprogramming, Protocols, Hexagonal DDD |
 | 26 | **Ruby** | [`bivex/DPX-Ruby`](https://github.com/bivex/DPX-Ruby) | Ruby 3.x, Rails, Metaprogramming, Dry-RB, Security |
@@ -168,4 +170,4 @@ dpx-prolog catalog
 
 ## 📄 License
 
-MIT License © 2026 Bivex
+Distributed under the MIT License. See [LICENSE](LICENSE) for details.
